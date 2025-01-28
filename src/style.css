@@ -1,1 +1,76 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #431d1d;
+  font-family: Arial, sans-serif;
+}
+
+.carta {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carta .valor {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carta .esquina {
+  position: absolute;
+  font-size: 2rem;
+}
+
+.carta .esquina.superior {
+  top: 10px;
+  left: 10px;
+}
+
+.carta .esquina.inferior {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.boton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+.pica {
+  color: black;
+}
+
+.trebol {
+  color: black;
+}
+
+.corazon {
+  color: red;
+}
+
+.diamante {
+  color: red;
+}
